@@ -1,0 +1,723 @@
+2017-09-28 13:42:45 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 13:42:45 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 13:42:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 13:42:45 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 13:42:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 13:42:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 13:42:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 13:42:45 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 13:42:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:42:51 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 13:42:51 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 13:42:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 13:42:51 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 13:42:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 13:42:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 13:42:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 13:42:51 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 13:42:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:43:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:43:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:44:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:44:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:45:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:45:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:46:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:46:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:47:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:47:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:48:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:48:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:49:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:49:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:50:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:50:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:51:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:51:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:52:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:52:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:53:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:53:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:54:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:54:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:55:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:55:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:56:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:56:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:57:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:57:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:58:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:58:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:59:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 13:59:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:00:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:00:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:01:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:01:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:02:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:02:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:03:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:03:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:04:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:04:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:05:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:05:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:06:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:06:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:07:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:07:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:08:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:08:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:09:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:09:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:10:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:10:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:11:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:11:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:12:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:12:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:13:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:13:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:14:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:14:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:15:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:15:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:16:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:16:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:17:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:17:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:18:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:18:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:19:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:19:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:20:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:20:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:21:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:21:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:22:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:22:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:23:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:23:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:24:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:24:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:25:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:25:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:26:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:26:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:27:24 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:27:24 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:27:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:27:25 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:27:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:27:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:27:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:27:25 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:27:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:27:31 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:27:31 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:27:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:27:31 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:27:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:27:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:27:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:27:31 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:27:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:28:22 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:28:22 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:28:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:28:23 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:28:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:28:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:28:23 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:28:23 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:28:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:28:29 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:28:29 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:28:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:28:29 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:28:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:28:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:28:29 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:28:29 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:28:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:29:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:29:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:30:16 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:30:16 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:30:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:30:16 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:30:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:30:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:30:17 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:30:17 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:30:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:30:32 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:30:32 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:30:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:30:33 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:31:31 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:31:31 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:31:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:31:31 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:31:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:31:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:31:31 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:31:31 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:31:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:31:37 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:31:37 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:31:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:31:37 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:31:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:31:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:31:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:31:37 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:31:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:32:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:32:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:33:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:33:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:34:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:34:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:35:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:35:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:37:08 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:37:08 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:37:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:37:08 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:37:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:37:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:37:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:37:08 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:37:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:37:14 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:37:14 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:37:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:37:14 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:37:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:37:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:37:14 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:37:14 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:37:14 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:38:09 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:38:09 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:38:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:38:09 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:38:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:38:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:38:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:38:09 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:38:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:38:15 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:38:15 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:38:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:38:15 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:38:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:38:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:38:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:38:15 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:38:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:38:42 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:38:42 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:38:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:38:42 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:38:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:38:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:38:42 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:38:42 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:38:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:38:48 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:38:48 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:38:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:38:48 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:38:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:38:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:38:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:38:48 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:38:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:39:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:39:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:40:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:40:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:49:02 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:49:02 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:49:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:49:02 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:49:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:49:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:49:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:49:03 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:49:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:49:08 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: getIPSpider)
+2017-09-28 14:49:08 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'getIPSpider', 'DOWNLOAD_DELAY': 3, 'DUPEFILTER_CLASS': 'scrapy_splash.SplashAwareDupeFilter', 'HTTPCACHE_STORAGE': 'scrapy_splash.SplashAwareFSCacheStorage', 'LOG_FILE': 'Spider2Log.csv', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'getIPSpider.spiders', 'SPIDER_MODULES': ['getIPSpider.spiders']}
+2017-09-28 14:49:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2017-09-28 14:49:08 [getIPs] INFO: Reading start URLs from redis key 'getIPs:start_urls' (batch size: 16, encoding: utf-8
+2017-09-28 14:49:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['getIPSpider.middlewares.IpMiddleWare',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-09-28 14:49:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-09-28 14:49:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['getIPSpider.pipelines.InsertItemPipline',
+ 'scrapy_redis.pipelines.RedisPipeline']
+2017-09-28 14:49:08 [scrapy.core.engine] INFO: Spider opened
+2017-09-28 14:49:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:50:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:50:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:51:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:51:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:52:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:52:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:53:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:53:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:54:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:54:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:55:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:55:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:56:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:56:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:57:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:57:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:58:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:58:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:59:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 14:59:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:00:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:00:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:01:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:01:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:02:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:02:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:03:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:03:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:04:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:04:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:05:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:05:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:06:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:06:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:07:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-09-28 15:07:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
