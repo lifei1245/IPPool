@@ -13,7 +13,7 @@ cssselect==1.0.1
 demjson==2.2.4
 enum34==1.1.6
 fake-useragent==0.1.7
-Flask==0.12.2
+Flask== 0.12.3
 Flask-RESTful==0.3.6
 httplib2==0.10.3
 hyperlink==17.1.1
