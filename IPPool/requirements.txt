@@ -41,7 +41,7 @@ redis==2.10.6
 requests==2.18.1
 Scrapy==1.4.0
 scrapy-redis==0.6.8
-scrapy-splash==0.7.2
+scrapy-splash==0.8.0
 service-identity==17.0.0
 shellescape==3.4.1
 six==1.10.0
